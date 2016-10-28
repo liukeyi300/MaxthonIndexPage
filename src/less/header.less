@@ -1,5 +1,8 @@
+@import (reference) "functions";
+
 #nav {
   margin:0 auto;
+  height: 50px;
 
   @media screen and (min-width: 768px) {
     width: 750px;
@@ -12,8 +15,16 @@
 
 .logo-mask {
   position: relative;
-  height: 50px;
+  height: 100%;
+  width: 120px;
   cursor: pointer;
   display: inline-block;
+}
+
+.download-mask {
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  .get-border-box();
 }
 

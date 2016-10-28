@@ -11,7 +11,14 @@ class DownloadButton extends React.Component {
     }
 
     render() {
-        return <a className={this.props.classname}><img src={this.props.src} ></img>{this.props.content}</a>;
+        if (typeof this.props.src === 'undefined') {
+            return <div className={this.props.classname + " download-btn"}>{this.props.content}</div>;
+        } else {
+            return <div className={this.props.classname + " download-btn"}>
+                        <img className="pa-vm" src={this.props.src} />
+                        <span>{this.props.content}</span>
+                   </div>;
+        }
     }
 }
 

@@ -21525,7 +21525,11 @@
 	                    { className: 'logo-mask' },
 	                    _react2.default.createElement('img', { className: 'pa-vm', src: __webpack_require__(182), alt: '' })
 	                ),
-	                _react2.default.createElement(_DownloadButton2.default, { content: '\u7ACB\u5373\u4E0B\u8F7D', classname: 'btn-small', src: __webpack_require__(183) })
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'download-mask' },
+	                    _react2.default.createElement(_DownloadButton2.default, { content: '\u7ACB\u5373\u4E0B\u8F7D', classname: 'btn-small pa-vm', src: __webpack_require__(183) })
+	                )
 	            );
 	        }
 	    }]);
@@ -21574,12 +21578,24 @@
 	    _createClass(DownloadButton, [{
 	        key: 'render',
 	        value: function render() {
-	            return React.createElement(
-	                'a',
-	                { className: this.props.classname },
-	                React.createElement('img', { src: this.props.src }),
-	                this.props.content
-	            );
+	            if (typeof this.props.src === 'undefined') {
+	                return React.createElement(
+	                    'div',
+	                    { className: this.props.classname + " download-btn" },
+	                    this.props.content
+	                );
+	            } else {
+	                return React.createElement(
+	                    'div',
+	                    { className: this.props.classname + " download-btn" },
+	                    React.createElement('img', { className: 'pa-vm', src: this.props.src }),
+	                    React.createElement(
+	                        'span',
+	                        null,
+	                        this.props.content
+	                    )
+	                );
+	            }
 	        }
 	    }]);
 

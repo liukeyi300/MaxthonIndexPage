@@ -11,7 +11,9 @@ class Header extends React.Component {
                     <div className="logo-mask">
                         <img className="pa-vm" src={require('../../images/logo.png')} alt=""/>
                     </div>
-                    <DownloadButton content="立即下载" classname="download-btn btn-small" src={require('../../images/download-pc-icon.png')} />
+                    <div className="download-mask">
+                        <DownloadButton content="立即下载" classname="btn-small pa-vm" src={require('../../images/download-pc-icon.png')}/>
+                    </div>
                </div>;
     }
 }
