@@ -21666,7 +21666,7 @@
 	                { className: subMenu === null ? 'menu-leaf' : '' },
 	                _react2.default.createElement(
 	                    'a',
-	                    { href: typeof item.href !== 'undefined' ? item.href : '#' },
+	                    { className: 't-n', href: typeof item.href !== 'undefined' ? item.href : '#' },
 	                    item.text
 	                ),
 	                subMenu
