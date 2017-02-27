@@ -65,6 +65,7 @@
 	 */
 	__webpack_require__(183);
 
+
 	var items = [{
 	    text: "abc",
 	    href: '#',
@@ -74,6 +75,7 @@
 	}, {
 	    text: "def"
 	}];
+
 	_reactDom2.default.render(_react2.default.createElement(_Header2.default, { logoSrc: __webpack_require__(185), menuItems: items }), document.getElementsByClassName('header')[0]);
 
 /***/ },

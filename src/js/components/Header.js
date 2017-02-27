@@ -12,7 +12,6 @@ class Header extends React.Component {
     }
 
     handleLogoClick() {
-
     }
 
     render() {

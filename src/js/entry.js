@@ -5,6 +5,7 @@ require('../less/app.less');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header.js';
+
 const items = [{
     text: "abc",
     href: '#',
@@ -14,4 +15,5 @@ const items = [{
 }, {
     text: "def"
 }];
+
 ReactDOM.render(<Header logoSrc={require('../images/logo.png')} menuItems={items} />, document.getElementsByClassName('header')[0]);
